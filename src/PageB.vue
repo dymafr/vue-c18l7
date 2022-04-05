@@ -1,6 +1,20 @@
 <template>
-  <div class="card p-20 d-flex justify-content-center align-items-center">
+  <div
+    class="
+      card
+      p-20
+      d-flex
+      flex-column
+      justify-content-center
+      align-items-center
+    "
+  >
     <h1>La page B</h1>
+    <div>
+      <router-link to="/b/b1">Page B1</router-link>
+      <router-link to="/b/b2">Page B2</router-link>
+    </div>
+    <router-view></router-view>
   </div>
 </template>
 

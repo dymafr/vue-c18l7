@@ -7,23 +7,18 @@ import PageB2 from './PageB2.vue';
 export const routes: RouteRecordRaw[] = [
   {
     path: '/',
-    components: {
-      sidenav: NavB,
-      main: PageA,
-    },
+    component: PageA,
   },
   {
     path: '/a',
-    components: {
-      sidenav: NavA,
-      main: PageA,
-    },
+    component: PageA,
   },
   {
     path: '/b',
-    components: {
-      sidenav: NavB,
-      main: PageB,
-    },
+    component: PageB,
+    children: [
+      { path: 'b1', component: PageB1 },
+      { path: 'b2', component: PageB2 },
+    ],
   },
 ];

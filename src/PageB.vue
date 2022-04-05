@@ -10,7 +10,7 @@
     "
   >
     <h1>La page B</h1>
-    <div>
+    <div class="p-10">
       <router-link to="/b/b1">Page B1</router-link>
       <router-link to="/b/b2">Page B2</router-link>
     </div>

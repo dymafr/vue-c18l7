@@ -5,8 +5,7 @@
     <router-link to="/b"> Page B</router-link>
   </nav>
   <div class="d-flex flex-row">
-    <router-view name="sidenav"></router-view>
-    <router-view name="main"></router-view>
+    <router-view></router-view>
   </div>
 </template>
 
